@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">یادآور شمسی</string>
+    <string name="widget_name">یادآور شمسی</string>
+    <string name="widget_desc">یادآورهای امروز، با تیک زدن روی صفحهٔ خانه</string>
+</resources>

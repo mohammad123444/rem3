@@ -121,7 +121,7 @@ private fun WidgetContent(rows: List<WidgetRow>, header: String, titleSp: Int, m
             modifier = GlanceModifier
                 .fillMaxWidth()
                 .padding(bottom = 6.dp)
-                .clickable(actionStartActivity<MainActivity>()),
+                .clickable(actionStartActivity(Intent(LocalContext.current, MainActivity::class.java))),
         )
         if (rows.isEmpty()) {
             Text(
@@ -252,3 +252,5 @@ class ToggleExpandAction : ActionCallback {
 class TodayWidgetReceiver : GlanceAppWidgetReceiver() {
     override val glanceAppWidget: GlanceAppWidget = TodayWidget()
 }
+import android.content.Intent
+import androidx.glance.LocalContext
